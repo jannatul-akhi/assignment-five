@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Card</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <!-- interactive header part of card -->
+  <header class="w-full h-full max-w-7xl mx-auto md:py-5 ">
+    <div class="navbar bg-slate-300 px-10">
+      <div class="flex-1">
+        <h1><span class="text-4xl font-bold">Interactive</span><br>
+          <span class="text-2xl font-semibold text-gray-600">Geometry Genius</span>
+        </h1>
+      </div>
+      <div class="flex-none gap-2">
+        <div class="form-control">
+          <button id="cardBtn" class="btn btn-active">Card</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="w-full h-full max-w-7xl mx-auto py-10">
+      <div class="flex flex-col md:flex-row gap-10 justify-between items-center">
+        <div class="flex flex-col gap-6 px-5 lg:px-0 w-full lg:w-[50%] mx-auto">
+          <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box">
+            <div class="collapse-title text-xl font-medium">
+              <h1>What is the DOM?</h1>
+              <h1>What is the purpose of the DOM?</h1>
+            </div>
+            <div class="collapse-content">
+              <p>The Document Object Model (DOM) is a programming API for HTML and XML documents. It defines the logical structure of documents and the way a document is accessed and manipulated.</p>
+              <br>
+              <p>According to the W3C, one of the main reasons for developing the DOM is to maintain a standard programming interface for HTML and XML documents, which is language-independent. Setting and maintaining this standard enables programmers to create or navigate these types of documents and modify their elements predictably, using any type of language or development environment.</p>
+            </div>
+          </div>
+
+          <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box">
+            <div class="collapse-title text-xl font-medium">
+              <h1>How to select an element from the document.</h1>
+            </div>
+            <div class="collapse-content">
+              <p>
+              <h1>JavaScript provides six methods to select an element from the document.</h1>
+              <ul class="number">
+                <li>1. getElementById – search element by element_id.</li>
+                <li>2. getElementsByTagName – search element by tag name</li>
+                <li>3. getElementsByClassName – search element by class name.</li>
+                <li>4. getElementsByName – search element by name attribute.</li>
+                <li>5. querySelector - returns the first element that matches the passed selector.</li>
+                <li>6. querySelectorAll - This method returns all the elements that match the passed selector.</li>
+              </ul>
+              </p>
+            </div>
+          </div>
+
+
+          <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box">
+            <div class="collapse-title text-xl font-medium">
+              <h1>What is Event Bubbling</h1>
+            </div>
+            <div class="collapse-content">
+              <p>Tvent bubbling is a type of DOM event propagation where the event first triggers on the innermost target element, and then successively triggers on the ancestors the target element in the same nesting hierarchy till it reaches the outermost DOM element or document object</p>
+            </div>
+          </div>
+
+
+          <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box">
+            <div class="collapse-title text-xl font-medium">
+              <h1>What is callback function?</h1>
+              <h1>Why use callback function?</h1>
+            </div>
+            <div class="collapse-content">
+              <p>A JavaScript callback is a function that is to be run following the completion of another function. A
+                callback function is any function that receives input from another function and is then used to execute
+                that other function, according to a more rigorous definition.</p>
+              <br>
+              <p>Callback functions are needed because many JavaScript actions are asynchronous. Instead, it executes in
+                the background while the rest of the code runs. A callback's purpose is to execute code in response to
+                an event.</p>
+            </div>
+          </div>
+        </div>
+        <div class="w-full lg:w-[50%] mx-auto">
+          <img class="w-[500px]" src="images/question.jfif" alt="">
+        </div>
+      </div>
+    </section>
+  </main>
+
+<!-- added the javascript file -->
+
+  <script src="card.js"></script>
+</body>
+
+</html>
